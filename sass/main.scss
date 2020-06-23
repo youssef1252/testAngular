@@ -1,0 +1,160 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// colors
+
+$c_bg : #d5dae5;
+$c_bg-dark : #c9cfde;
+
+$c_purple : #4d4cac;
+
+$c_pink : #ff808b;
+$c_light-red : #f7e5e9;
+
+$c_grey-blue : #c8c9e9;
+$c_light-blue : #f5f5f9;
+$c_blue : #5e81f4;
+$c_grey: grey;
+
+.blue {
+    color: $c_blue;
+}
+
+.grey {
+    color: $c_grey;
+}
+
+.black {
+    color: black;
+}
+
+html, body {
+    background-color: $c_bg-dark;
+    height: 100vh;
+}
+
+.row {
+    height: 100vh;
+}
+
+.col-7 {
+    background-color:$c_light-blue;
+}
+.col-3 {
+    background-color:$c_light-blue;
+    border-radius: 0 5px 5px 0;
+}
+
+.col-2 {
+    background-color:$c_light-blue;
+
+    &:first-child {
+        border-radius: 5px 0 0 5px;
+        }
+}
+
+.bg-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:5px;
+    min-height: 60px;
+}
+
+.loupe {
+    cursor: pointer;
+    background-color: #dfe7ff;
+    border-radius: 3px;
+    width: 35px;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.welcome-back {
+    position: relative;
+    background-color: $c_light-red;
+    color: $c_pink;
+    padding: 30px;
+
+    h5 {
+        font-size:20px;
+    }
+
+    .black {
+        font-size: 17px;
+        margin-bottom:5px;
+    }
+
+    .welcome-img {
+        position: absolute;
+        top: -65px;
+        left: 60%;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.img-placeholder {
+    background-image: url(../img/undraw_refreshing_beverage_td3r.svg);
+    height: 120px;
+    width: 120px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.profile {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .avatar {
+        position: relative;
+        background-image: url(../img//undraw_profile_pic_ic5t.svg);
+        height: 150px;
+        width: 150px;
+        align-items: center;
+        margin: 1rem 2rem auto 2rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+
+        .dot {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            padding: 5px;
+            border-radius: 360px;
+            background-color: $c_blue;
+            bottom: 0;
+            right: 0;
+            span {
+                cursor: pointer;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .names {
+
+    }
+
+}
+
+
+#selec {
+    border: none!important;
+    display: flex;
+    border-radius: 5px;
+    padding: .3rem;
+}

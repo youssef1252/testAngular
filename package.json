@@ -8,7 +8,9 @@
   },
   "author": "youssef",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",
